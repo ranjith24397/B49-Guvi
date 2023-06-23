@@ -1,0 +1,23 @@
+1. Write a blog on Difference between HTTP1.1 vs HTTP/2
+HTTP is called Hyper Transfer Protocol that is used for data transer over the internet . First HTTP was introduced in 1999
+and the HTTP/2 was introduced in 2015 we can see the main difference between these two below shortly.
+
+Multiplexing : This is the most important difference between HTTP/1.1 and HTTP 2 . HTTP /1.1 does not support multiplexing and HTTP/2 is supporting . This means in HTTP /1.1 browser needs to download multiple things one after one but in HTTP/2 we can do that at a time simultaneously over single TCP connections and saves the time.  
+
+Server push: HTTP/2 can send resources to the users before they request with the help of additional server push so that the performance can be improved by reducing the number of trips need to fetch the required resources but in HTTP /1.1 is not able to do that
+Binary protocol : HTTP /2 uses binary protocol whereas HTTP/1.1 uses text based protocol so HTTP/2 can phare more quickly than HTTP/1.1 
+Security : SSL/TLS are used in both HTTP/1.1 and /2 but in HTTP/2 requires SSL/TLS whereas in HTTP/1.1 SSL/TLS optional 
+
+the above metioned are the some comparison between the HTTP/1.1 and HTTP/2
+
+2. Write a blog about objects and its internal representation in Javascript.
+Objects are used to store and manipulate data. there are several ways to create objects. One way is to use object literals which is a list of value pairs with the curly braces and another one is to use the "object()" constructor.
+"In JavaScript, objects are implemented as hash tables. A hash table is a data structure that uses a hash function to map keys to values. When an object is created in JavaScript, a hash table is created to store the key-value pairs.
+
+Internal Rep: Hash table in the Javascript is implemented as an array of buckets each bucket contains a linked list of key-value pairs. When a new key-value pair is added to the hash table, the hash function is used to determine which bucket the key-value pair should be stored in. If there are already key-value pairs in the bucket, a new node is added to the linked list.
+
+When a key is used to retrieve a value from an object, the hash function is used to determine which bucket the key-value pair is stored in. The linked list in the bucket is then searched to find the value associated with the key."
+
+"In addition to key-value pairs, objects in JavaScript can also have properties and methods. Properties are simply variables that are stored as part of the object. Methods are functions that are stored as part of the object and can be called to perform actions on the object.
+
+Properties and methods are accessed using dot notation. For example, to access the name property of the person object created earlier, we would use person.name. To call the toUpperCase() method of the name property, we would use person.name.toUpperCase()."
