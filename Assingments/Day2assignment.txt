@@ -1,0 +1,19 @@
+Blog on the difference between document object and window object.
+
+The document object and the window object are nearly the same but serve different purposes. 
+
+The window object is available in both browser and non-browser environments, such as Node.js, where it represents the global object for the Node.js runtime.
+
+The document object is specific to the browser environment and is not available outside of it. It is accessible only when a document is loaded in a browser window or tab.
+
+The window object represents the browser tab or window and acts as a global object in the browser environment. 
+
+The document object is like a child of the window object and represents the HTML document loaded in the window. It provides access to the elements, content, and structure of the document.
+
+The window object has properties and methods related to the browser window, including methods like open(), close(), alert(), and properties like innerWidth, innerHeight, location, etc.
+
+The document object has properties and methods related to the loaded HTML document, including methods like getElementById(), querySelector(), createElement(), and properties like title, body, head, etc.
+
+The window object provides global methods, properties, and events related to the browser window itself. It includes functionalities like manipulating the window size, opening or closing windows etc..
+
+The document object focuses on the content of the HTML document. It provides access to the DOM (Document Object Model) and allows you to interact with elements, modify their attributes or styles etc..
